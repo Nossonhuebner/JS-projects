@@ -1,0 +1,30 @@
+.clock-face{
+  width: 200px;
+  height: 200px;
+  background: blue;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  height: 5px;
+  width: 50%;
+  background-color: #002079;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.1s;
+  transition-timing-function: cubic-bezier(1, -0.1, 0.82, 1.68);
+}
+
+.minutes {
+
+}
+
+.seconds {
+
+}
+
+#hours {
+}

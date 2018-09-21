@@ -1,21 +1,45 @@
 html {
-  background: grey
+  background-image: url("assets/conductor.jpg");
+  background-size: cover;
 }
 
 .keys {
   display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
   flex-wrap: wrap;
-  transition: all 0.07s;
+  align-self: center;
 }
 
 .key {
-  border: 1px solid black;
+  border: 3px solid #0c00c159;
   border-radius: 10px;
-  margin: 30px;
+  margin: 10px;
   padding: 10px;
+  transition: all .08s;
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  align-items: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.letter {
+  color: #f1f1f1;
+  font-size: 35px;
+  text-shadow: 2px 2px 14px #8785ff;
+}
+
+.sound {
+  color: #98a6dc;
+  font-size: 18px;
+  text-shadow: 3px 3px 10px #0547ffdb
 }
 
 .playing {
-  transform: scale(1.2);
-  border: 2px solid red;
+  transform: scale(1.1);
+  box-shadow: 5px 13px 24px rgba(120, 136, 255, 0.77)
 }

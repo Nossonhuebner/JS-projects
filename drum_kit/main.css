@@ -1,0 +1,21 @@
+html {
+  background: grey
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.07s;
+}
+
+.key {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.playing {
+  transform: scale(1.2);
+  border: 2px solid red;
+}

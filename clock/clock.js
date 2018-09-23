@@ -4,14 +4,11 @@ tock.src = './tick.wav';
 document.addEventListener("DOMContentLoaded", runClock);
 
 function runClock() {
-
-
   setInterval(tick, 1000);
 }
 
 function tick() {
   tock.currentTime = 0.05;
-  console.log(tock.currentTime);
   tock.play();
 
   const time = new Date();
